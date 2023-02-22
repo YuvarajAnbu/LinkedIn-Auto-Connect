@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Auto Connect</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>LinkedIn Auto Connect</h1>
+      <button type="button" title="Settings">
+        <img src="../images/gear.png" alt="" />
+      </button>
+    </header>
+    <main>
+      <p>Invitations Sent</p>
+      <div class="circular-progress">
+        <svg xmlns="http://www.w3.org/2000/svg" class="progress">
+          <circle class="c2" cy="50%" cx="50%" pathLength="100"></circle>
+          <circle class="c1" cy="50%" cx="50%" pathLength="100"></circle>
+        </svg>
+        <h1>0</h1>
+      </div>
+      <div class="btns">
+        <button type="button" class="start">Start Connecting</button>
+        <button type="button" class="stop">Stop Connecting</button>
+      </div>
+    </main>
+    <script src="./popup.js"></script>
+  </body>
+</html>

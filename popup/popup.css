@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #191f2a;
+  color: white;
+  text-align: center;
+  /* min-width: 300px; */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  background-color: #2d3646;
+}
+
+header h1 {
+  font-size: 15px;
+  margin-right: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+header button {
+  background-color: #3d4553;
+  padding: 4px 5px;
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+header button img {
+  width: 16px;
+  height: 16px;
+}
+
+p {
+  font-size: 16px;
+  margin: 15px;
+}
+
+.circular-progress {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin: auto;
+  --stroke-width: 7px;
+}
+.circular-progress .progress {
+  width: 100% !important;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+.circular-progress circle {
+  stroke: #63ab7c;
+  stroke-width: var(--stroke-width, 3);
+  transition: stroke-dasharray 0.3s linear;
+  stroke-dasharray: var(--percent, 0) 100;
+  fill: none;
+  r: calc(50% - (var(--stroke-width, 3px) / 2));
+}
+.circular-progress .c2 {
+  stroke: white;
+  stroke-dasharray: 100 100;
+}
+
+.circular-progress h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.btns {
+  margin: 15px;
+}
+
+.btns.started .start {
+  display: none;
+}
+.btns.started .stop {
+  display: initial;
+}
+
+.btns button {
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.start {
+  background-color: #7bc495;
+}
+
+.stop {
+  background-color: #f6bab2;
+  display: none;
+}

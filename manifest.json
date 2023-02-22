@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Auto Connect",
+  "description": "Connect to more people on LinkedIn easily",
+  "version": "1.0",
+  "author": "contact@yuvarajanbu.com",
+  "icons": {
+    "16": "images/16x16.png",
+    "32": "images/32x32.png",
+    "48": "images/48x48.png",
+    "128": "images/128x128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "images/disabled_16.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["*://*.linkedin.com/*"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["tabs"]
+}
