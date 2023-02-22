@@ -6,7 +6,7 @@ But for now, it only work on the first page of the search.
 <br>
 ## How do you run it
 Simple, just download the code and follow these steps 
-[https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked). I tried to upload it to web store but I dont have a credit card to do it. Sorry for that.
+[https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked) . I tried to upload it to web store but I dont have a credit card to do it. Sorry for that.
 
 ## How to use it
 
